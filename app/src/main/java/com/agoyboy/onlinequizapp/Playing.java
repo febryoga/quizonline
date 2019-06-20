@@ -1,9 +1,9 @@
 package com.agoyboy.onlinequizapp;
 
 import android.content.Intent;
+import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
@@ -11,14 +11,12 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 
 import com.agoyboy.onlinequizapp.Common.Common;
-import com.google.firebase.database.DatabaseReference;
-import com.google.firebase.database.FirebaseDatabase;
 import com.squareup.picasso.Picasso;
 
 public class Playing extends AppCompatActivity implements View.OnClickListener{
 
     final static long INTERVAL = 1000;
-    final static long TIMEOUT = 7000;
+    final static long TIMEOUT = 15000;
     int progressValue = 0;
 
     CountDownTimer mCountDown;
